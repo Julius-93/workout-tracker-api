@@ -22,6 +22,7 @@ def enable_sqlite_foreign_keys(connection, connection_record):
 def create_app(test_config=None):
     app = Flask(__name__)
     app.config.from_object(Config)
+    app.json.sort_keys = False
     if test_config is not None:
         app.config.update(test_config)
 
