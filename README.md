@@ -69,7 +69,7 @@ Database by default: `instance/workouts.db`. The folder is gitignored. Override 
 ## Run the API
 
 ```bash
-pipenv run flask --app wsgi:app run --debug
+pipenv run flask --app wsgi:app --debug run
 ```
 
 Default base URL: `http://127.0.0.1:5000`. Check health:
